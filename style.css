@@ -1,0 +1,164 @@
+*{ 
+  font-family:monospace;
+  box-sizing:border-box
+}
+
+a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+
+h2 {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+a:hover {
+  color: #001418;
+}
+
+ul {
+  width:100%;
+  list-style-type:none;
+}
+
+ul li {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  border-radius:10px;
+  cursor:pointer;
+  position:relative;
+  padding:0;
+  font-size:18px;
+  transition:.2s;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+ul li:hover {
+  filter:brightness(116%)
+}
+
+#to-do ul li {
+  background:rgb(255, 137, 137)
+}
+
+#in-do ul li {
+  background:#fff892
+}
+
+#do-do ul li {
+  background:#ceff79
+}
+
+li {
+  width:100%;
+  min-height: 45px;
+  margin-left:-20px;
+  margin-bottom:5px;
+  padding: 0;
+  text-align: left;
+}
+
+.next {
+  min-width:29px;
+  text-align: center;
+  float:right;
+  color:rgb(109, 109, 109);
+}
+
+.next:hover {
+  color: black;
+}
+
+#t-input {
+  padding:0 8px;
+  font-size: inherit;
+  outline: none;
+  background-color: inherit;
+  display: block;
+  border-style: none;
+  width:100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.task {
+  padding: 0 8px;
+}
+
+.header {
+  border-radius: 5px;
+  padding:10px 30px;
+  color:#001418;
+  text-align:center;
+  font-size:120%;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+.row {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly
+}
+
+
+.quote {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(190, 190, 190);
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+.footer {
+  margin-top: 10px;
+  padding: 0 5px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap-reverse;
+  justify-content:space-between;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+.col {
+  text-align: center;
+  float:left;
+  width:100%;
+  margin:.1%;
+  margin-top:.5%;
+  padding:0 10px;
+  border-radius:5px
+}
+
+#to-do {
+  background-color:rgb(255, 88, 88)
+}
+
+#in-do {
+  background-color:#fff243
+}
+
+#do-do {
+  background-color:#baff43
+}
+
+@media screen and (max-width:640px) {
+  .row{flex-direction:column}
+  .next{transform: rotate(90deg)}
+  .col{text-align: left;}
+}
