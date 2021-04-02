@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
     || document.body.clientHeight;
 
     var bgurl = "url(https://picsum.photos/" + String(width) + "/" + String(height) + ")" ;
-
+    
     document.querySelector("body").style.backgroundImage = bgurl;
 
     var cls = document.getElementById("clear-ddl");
