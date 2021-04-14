@@ -1,48 +1,30 @@
 <!DOCTYPE html>
+<!-- The project homescreen -->
+
 <html>
-<head>
+  <head>
+    <title>
+      The TaskMaster project
+    </title>
+
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>TaskMaster 9000</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
-    <script src='main.js'></script>
-</head>
-<body>
-    <div class="header" id="entere">
-        <h1 id="main-top">TaskMaster 9000</h1>
-    </div>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
 
-    <div class="row">
-    <div class="col" id="to-do">
-        <h2>To do</h2>
-        
-        <ul id="tdl">
-            <li><input type="text" id="t-input" placeholder="Enter task..." autocomplete="off"></li>
-        </ul>
+    <div class="top-bit">
+      <h1>TaskMaster 9000</h1>
+      <h3> A task organizer for everyone </h3>
+      <br>
+      <a href="/app"><button> Go to TaskMaster</button></a>
     </div>
-
-    <div class="col" id="in-do">
-        <h2>In progress</h2>
-        <ul id="idl">
-        </ul>
+    <br><br>
+    <div class="bottom-bit">
+      <a href="https://github.com/taskmaster9000/taskmaster9000.github.io">Source at github</a>
+      <span>There are no bugs, only features</span>
+      <span>Made by the RGB IT cell</span>
     </div>
-
-    <div class="col" id="do-do">
-        <h2>Done</h2>
-        <ul id="ddl">
-        </ul>
-    </div>
-    </div>
-    <p class="quote">
-        There are no bugs, only features.
-    </p>
-    <div class="footer">
-        <a href="javascript:void(0);" id="clear-all">Clear all</a>
-        <a href="https://github.com/taskmaster9000/taskmaster9000.github.io">Source</a>
-        <a href="javascript:void(0);" id="clear-ddl">Clear completed</a>
-    </div>
-
-</body>
+  </body>
 </html>
